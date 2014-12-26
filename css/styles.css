@@ -1,0 +1,243 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 16px; 
+	color: #838994; 
+	letter-spacing: 0.03em;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Assist in placement of nav elements */
+/*body {
+    background-color: LightGray;
+}
+div {
+    border: 1px solid Chocolate;
+}*/
+
+
+/* Navigation Section */
+
+.content  {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 970px;
+}
+
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+	z-index: 9999;
+}
+.top-navigation > .content {
+    height: 70px;
+}
+.top-navigation .logo {
+    height: 70px;
+}
+.top-navigation .links {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+/*Introduction Section*/
+
+.introduction {
+    background-image: url('../images/first-background.jpg');
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    margin: 0 auto;
+    overflow:auto;
+}
+ .introduction h1, .introduction h3 {
+ 	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+.introduction h1 {
+	margin-top: 200px;
+	font-size: 50px;	
+}
+.introduction h3 {
+	margin-top: 20px;
+	font-size: 25px;
+}
+.learn-button {
+    text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 16px 26px;
+	line-height: 1.33;
+	width: 153px;
+	height: 53px;
+	background-color: #f15b2a;
+	font-size: 1.125rem;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	margin-top: 25px;
+} 
+.introduction .learn-button:hover {
+	background-color: #d9400e;
+	cursor:pointer;
+}
+/*Cases Section */
+
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+}
+.cases .content {
+    margin-top: 126px;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 44px;
+    margin: 26px 0 50px;
+    font-weight: 300;
+}
+.cases .content  {
+  text-align: center;
+}
+
+.cases .devices {
+  margin-top: 50px;
+  padding:50px;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+ 
+ -webkit-flex-flow: row ;
+ justify-content: space-around;
+ align-content: center;
+}
+.cases .devices .flex-item {
+   width: 127px;
+   length: 127px;
+   padding:20px;
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 40px 0px 30px;
+
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 21px;
+}
+/*Social section*/
+.social {
+    background-color: #fff;
+    overflow: auto;
+    text-align: center;
+}
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 21px 0;
+}
+.social .content {
+	margin: 0 auto;
+}
+
+.social .icons > li {
+	display: inline-block;
+    border-radius: 50%;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    
+    margin: 20px 5px;
+    border: 1px solid #eaebec;
+    text-align: center;
+}
+.social .icons > li:hover {
+    cursor: pointer;
+}
+.social .twitter {
+    color: #55acee;
+}
+.social .facebook {
+    color: #4c66a4;
+}
+.social .instagram {
+    color: #3f729b;
+}
+.social .copy {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #838994;
+}
+
+
+
